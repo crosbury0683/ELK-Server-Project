@@ -94,8 +94,6 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 - You can create additioanal playbooks files to install Filebeat and Metricbeat
 - Access the ELK server from the VM's public IP on port 5601, and allow monitored data to send to the Kibana web application through port 9200.
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - 10.0.0.5
@@ -125,12 +123,14 @@ SSH into the control node and follow the steps below:
 - Update the output.elasticsearch and setup.kibana parameters in both config files to use the private IP for the ELK server virtual machine.
 - Run the playbook, and navigate to ELK VM via SSH to check that the installation worked as expected. Run 'sudo docker ps' command to check the installation.
 
-Answer the following questions to fill in the blanks:_
   Which file is the playbook?
+  
+  - filebeat-playbook.yml
+  - metricbeat-playbook.yml
 
    Where do you copy it?
 
-   /etc/ansible
+   root@beac9613e6a2:/etc/ansible#, which is from the 'adoring_haibt' Docker container on the red-team 'Jump Box'
 
 -Which file do you update to make Ansible run the playbook on a specific machine?
 
