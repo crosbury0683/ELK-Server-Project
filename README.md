@@ -142,7 +142,7 @@ Inside the /etc/ansible directory is a configuration file named hosts. That file
 
  http://40.70.228.182:5601/ 
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+As a Bonus, I've provided the specific commands the user will need to run to download the playbook, update the files, etc.
 
 * ssh username@publicJumpBoxIP
 * sudo docker container ls -a
